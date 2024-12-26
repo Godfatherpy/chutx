@@ -32,5 +32,8 @@ USER root
 # Expose the RDP port
 EXPOSE 3389
 
+# Expose an additional HTTP port (if needed)
+EXPOSE 8000
+
 # Start xrdp
 CMD ["/usr/sbin/xrdp", "-nodaemon"]
